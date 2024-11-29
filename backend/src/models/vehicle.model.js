@@ -19,6 +19,11 @@ const vehicleSchema = new mongoose.Schema(
             trim : true,
             enum : ['available', 'in-use', 'maintenance'],
             default : 'available'
+        },
+        assignedTo: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User', // Assuming drivers are stored in the User model
+            default: null
         }
     }, 
     {

@@ -40,7 +40,10 @@ const userSchema = new mongoose.Schema(
             enum : ["admin","manager","driver","user"],
             default : 'user'
 
-        }
+        },
+        managedBy: { 
+            type: mongoose.Schema.Types.ObjectId, 
+            ref: 'User' } // Reference to manager
     },
     {
         timestamps: true,

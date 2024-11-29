@@ -19,10 +19,12 @@ import userRouter from "./routes/user.routes.js"
 import adminRouter from "./routes/admin.routes.js"
 import driverRouter from "./routes/driver.routes.js"
 import managerRouter from "./routes/manager.routes.js"
+import vehicleRouter from "./routes/vehicle.routes.js"
 
 app.use('/api/v1/users',userRouter)
 app.use('/api/v1/admin',adminRouter)
 app.use('/api/v1/driver',driverRouter)
 app.use('/api/v1/manager',managerRouter)
+app.use('/api/v1/vehicle',vehicleRouter)
 
 export {app}

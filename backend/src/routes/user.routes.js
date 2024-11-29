@@ -1,7 +1,7 @@
 import {Router} from 'express'
 import { registerUser,loginUser, logoutUser, refreshAccessToken, changeCurrentPassword } from '../controllers/user.controller.js';
 import { verifyJWT } from '../middlewares/auth.middleware.js';
-import { checkRole } from '../middlewares/checkRole.middleware.js';
+
 
 
 
