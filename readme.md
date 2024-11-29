@@ -119,7 +119,7 @@ Follow the steps below to set up the project locally.
 4. **Run the application**:
     After setting up your environment, run the server:
     ```bash
-    npm start
+    npm run server
     ```
     This will start the application on the port specified in `.env` (default: `5000`).
 
@@ -173,7 +173,7 @@ Contains utility functions for error handling, response formatting, and asynchro
 2. Set up your `.env` file with the necessary environment variables.
 3. Run the app using:
     ```bash
-    npm start
+    npm run server
     ```
 4. The server will be running at `http://localhost:5000`. You can now make requests to the API endpoints using Postman or any HTTP client.
 
