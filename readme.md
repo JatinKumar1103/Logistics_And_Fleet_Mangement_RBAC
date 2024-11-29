@@ -1,7 +1,3 @@
-Certainly! Below is the **README** file structure for your project, which includes all the details about the project, the files, directory structure, and how to run it.
-
----
-
 # Logistics and Fleet Management System (RBAC)
 
 ## Introduction
