@@ -150,12 +150,14 @@ Defines the routes for various API endpoints.
 - **driver.routes.js**: Defines routes for drivers to view tasks and update vehicle status.
 - **manager.routes.js**: Contains the routes for the manager, such as monitoring drivers and managing vehicles.
 - **vehicle.routes.js**: Defines the routes for vehicle management, such as adding vehicles, assigning them to drivers, and updating their status.
+- **user.routes.js**: Defines the routes for user-related functionalities such as registration, login, logout, and role assignment.
 
 ### **middlewares**
 Contains middlewares for authentication and permission handling.
 
 - **auth.middleware.js**: Verifies JWT token for authentication.
-- **permission.js**: Checks the user's role and permissions to ensure they can access specific routes.
+- **checkRole.middleware.js:**: Validates the role of the user to ensure they have access to specific routes or functionalities.
+- **permission.middleware.js**: Checks if a user has the required permissions to perform certain actions based on their role and assigned privileges.
 
 ### **utils**
 Contains utility functions for error handling, response formatting, and asynchronous handling.
@@ -163,7 +165,7 @@ Contains utility functions for error handling, response formatting, and asynchro
 - **ApiError.js**: Custom error handler for throwing errors with status codes and messages.
 - **ApiResponse.js**: Formats API responses in a consistent structure.
 - **asyncHandler.js**: A utility to handle asynchronous code and pass errors to the next middleware.
-- **generateTokens.js**: Generates access and refresh tokens for user authentication.
+- **permission.js**: Checks the user's role and permissions to ensure they can access specific routes.
 
 ---
 
